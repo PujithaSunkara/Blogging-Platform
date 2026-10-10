@@ -21,7 +21,7 @@ function Signup() {
         try {
 
             await axios.post(
-                "http://localhost:5000/api/signup",
+                "https://blogging-platform-bnka.onrender.com/api/signup",
                 {
                     name,
                     email,

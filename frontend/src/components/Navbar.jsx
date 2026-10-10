@@ -9,7 +9,7 @@ function Navbar() {
     const logout = async () => {
         try {
             await axios.post(
-                "http://localhost:5000/api/logout",
+                "https://blogging-platform-bnka.onrender.com/api/logout",
                 {},
                 { withCredentials: true }
             );

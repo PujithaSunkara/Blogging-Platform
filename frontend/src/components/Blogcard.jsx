@@ -11,7 +11,7 @@ function Blogcard({ blog }) {
     const handleLike = async () => {
         try {
             const response = await axios.put(
-                `http://localhost:5000/api/blogs/${blog._id}/like`,
+                `https://blogging-platform-bnka.onrender.com/api/blogs/${blog._id}/like`,
                 {},
                 {
                     withCredentials: true

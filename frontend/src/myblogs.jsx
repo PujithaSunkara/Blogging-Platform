@@ -19,7 +19,7 @@ function MyBlogs() {
         try {
 
             const response = await axios.get(
-                "http://localhost:5000/api/myblogs",
+                "https://blogging-platform-bnka.onrender.com/api/myblogs",
                 {
                     withCredentials: true
                 }
@@ -56,7 +56,7 @@ function MyBlogs() {
             if (editingId) {
 
                 await axios.put(
-                    `http://localhost:5000/api/blogs/${editingId}`,
+                    `https://blogging-platform-bnka.onrender.com/api/blogs/${editingId}`,
                     {
                         title,
                         content,
@@ -70,7 +70,7 @@ function MyBlogs() {
             } else {
 
                 await axios.post(
-                    "http://localhost:5000/api/blogs",
+                    "https://blogging-platform-bnka.onrender.com/api/blogs",
                     {
                         title,
                         content,
@@ -118,7 +118,7 @@ function MyBlogs() {
         try {
 
             await axios.delete(
-                `http://localhost:5000/api/blogs/${id}`,
+                `https://blogging-platform-bnka.onrender.com/api/blogs/${id}`,
                 {
                     withCredentials: true
                 }
@@ -138,7 +138,7 @@ function MyBlogs() {
         try {
 
             await axios.put(
-                `http://localhost:5000/api/blogs/${id}/post`,
+                `https://blogging-platform-bnka.onrender.com/api/blogs/${id}/post`,
                 {},
                 {
                     withCredentials: true

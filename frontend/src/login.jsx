@@ -15,7 +15,7 @@ function Login() {
 
         try {
             await axios.post(
-                "http://localhost:5000/api/login",
+                "https://blogging-platform-bnka.onrender.com/api/login",
                 {
                     email,
                     password

@@ -13,7 +13,7 @@ function Home() {
         try {
 
             const response = await axios.get(
-                "http://localhost:5000/api/blogs",
+                "https://blogging-platform-bnka.onrender.com/api/blogs",
                 {
                     withCredentials: true
                 }

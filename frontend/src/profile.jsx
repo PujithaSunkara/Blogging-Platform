@@ -13,7 +13,7 @@ function Profile() {
 
         axios
             .get(
-                "http://localhost:5000/api/profile",
+                "https://blogging-platform-bnka.onrender.com/api/profile",
                 {
                     withCredentials: true
                 }

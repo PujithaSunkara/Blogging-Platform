@@ -10,7 +10,7 @@ function Commentsection({ blogId }) {
     const fetchComments = async () => {
         try {
             const response = await axios.get(
-                `http://localhost:5000/api/blogs/${blogId}/comments`,
+                `https://blogging-platform-bnka.onrender.com/api/blogs/${blogId}/comments`,
                 {
                     withCredentials: true
                 }
@@ -35,7 +35,7 @@ function Commentsection({ blogId }) {
             setLoading(true);
 
             await axios.post(
-                `http://localhost:5000/api/blogs/${blogId}/comments`,
+                `https://blogging-platform-bnka.onrender.com/api/blogs/${blogId}/comments`,
                 {
                     text: text
                 },
