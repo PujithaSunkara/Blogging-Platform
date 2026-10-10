@@ -16,7 +16,7 @@ app.use(express.json());
 
 app.use(
     cors({
-        origin: "http://localhost:5173",
+        origin: "https://blogging-platform-274zv6hs7-agentx4.vercel.app/",
         credentials: true
     })
 );
